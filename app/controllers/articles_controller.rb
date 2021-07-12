@@ -6,10 +6,11 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
-  def show
-  end
+  def show; end
 
-  def new; end
+  def new
+    @article = Article.new
+  end
 
   def create
     @article = Article.new(article_params)
@@ -22,8 +23,7 @@ class ArticlesController < ApplicationController
 
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     @article.update(article_params)
