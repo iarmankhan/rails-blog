@@ -3,7 +3,29 @@
 @import "~bootstrap/scss/bootstrap";
 
 
-// Just a quick ugly style to see if our CSS works
-h1 {
-  text-decoration: underline;
+#home-container {
+  margin-top: 25px;
+}
+
+.jumbotron {
+  // @todo - fix this
+  //background-image: asset-url('jumbo-copy.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: lightgrey;
+}
+
+#sticky-footer {
+  flex-shrink: none;
 }
